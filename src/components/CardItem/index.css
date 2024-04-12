@@ -1,0 +1,42 @@
+.slick-card-container{
+    background-color: #ececee;
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    padding: 7px;
+}
+.profile-image{
+    height: 100px;
+    width: 80px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.slick-card-content{
+    display: flex;
+    flex-direction: column;
+}
+.slick-card-title{
+    font-size: 14px;
+    margin: 1px;
+}
+.slick-card-name{
+    font-size: 10px;
+    margin: 1px;
+    flex-grow: 1;
+}
+.comments{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.comments-container{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .slick-card-title{
+        font-size: 10px;
+    }
+    .slick-card-name .comments{
+        font-size: 7px;
+    }
+}

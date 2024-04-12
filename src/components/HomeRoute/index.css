@@ -1,0 +1,160 @@
+.homeroute-container{
+  width: 100vw;
+  display: flex;
+}
+.body-container{
+  background-color: #f4f4f6;
+  height: 100vh;
+  overflow: auto;
+  flex-grow: 1;
+  padding: 30px;
+  width: 75%;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.body-welcome{
+  font-size: 12px;
+  color: #7a7d80;
+}
+.name-container{
+  display: flex;
+  align-items: center;
+}
+.profile{
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(to right,#f2a279,white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-text{
+  font-size: 10px;
+}
+.user-name{
+  font-size: 12px;
+  font-weight: bold;
+}
+.home-top-container{
+  display: flex;
+  justify-content: space-between;
+}
+.search-container{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #ececee;
+}
+.search-box{
+  border: none;
+  background-color: transparent;
+  width: 200px;
+  margin-left: 10px;
+  outline: none;
+  
+}
+.large-card-container{
+  display: flex;
+  border-radius: 15px;
+  height: 250px;
+  background-color: #f2a279;
+  margin-top: 20px;
+}
+.name-card{
+  width: 50%;
+  margin: 15px;
+}
+.scrole-name{
+  width: 100%;
+  animation: typing 1s steps(22);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.name-card-container{
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, #d2d1d7, #f5f5f5);
+}
+.card-profile-container{
+  display: flex;
+
+}
+.card-profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.card-profile-name{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+.card-profile-desc{
+  font-size: 14px;
+  flex-grow: 1;
+}
+.reply{
+  font-size: 12px;
+  font-weight: 500;
+  color: #7a7d80;
+}
+.slick-heading{
+  font-size: 15px;
+}
+.list-container{
+  list-style-type: none;
+  padding: 0px;
+  overflow: auto;
+  display: flex;
+}
+.tab-btn{
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  color: #3b3c40;
+  font-size: 13px;
+  background-color: #d4d3d8;
+  margin-left: 10px;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+}
+.menu{
+  display: none;
+}
+.active{
+  background-color: black;
+  color: white;
+}
+@media (max-width: 768px) {
+    .large-card-container{
+      display: none;
+    }
+    .tab-btn{
+      font-size: 10px;
+      height: 30px;
+      margin: 5px;
+    }
+    .list-container{
+      flex-wrap: wrap;
+    }
+    .menu{
+      display: inline;
+    }
+    .body-container{
+      width: 60%;
+      padding: 5px;
+    }
+    .search-box{
+      width: 70px;
+    }
+}
